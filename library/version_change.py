@@ -1,5 +1,25 @@
 #!/usr/bin/python
 
+DOCUMENTATION = '''
+---
+module: version_change
+short_description: bump semantic version numbers
+'''
+EXAMPLES = '''
+- hosts: localhost
+
+  tasks:
+  - name: Test that my module works
+    version_change: 
+      version_name: "Before"
+      version_no:  1.1.1 
+      unchanged_value: "This will pass through"
+    register: result
+
+  - debug: var=result    
+'''
+
+
 from ansible.module_utils.basic import *
 
 def main():
