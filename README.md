@@ -7,6 +7,7 @@ A hello world python ansible module and an example input output python ansible m
 
 ## Usage
 ```bash
-ansible-playbook version_change.yml
-ansible-playbook hello_world.yml
+$ ansible-playbook version_change.yml
+
+$ ansible-playbook hello_world.yml
 ```
