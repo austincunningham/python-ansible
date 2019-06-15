@@ -1,0 +1,12 @@
+---
+- name: list
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Passing Variables
+      list:
+        hello: "hello World"
+        ourlist: ['']
+      register: result
+    - name: Printing return
+      debug: var=result
